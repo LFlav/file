@@ -1,0 +1,147 @@
+dn: dc=musicschool,dc=fr
+objectclass: dcObject
+objectclass: organization
+dc: musicschool
+o: Musicschool Ecole de musique
+
+dn: ou=people,dc=musicschool,dc=fr
+objectclass: organizationalUnit
+ou: people
+
+dn: sn=rambaud,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Stephane RAMBAUD
+mail: rambaud@musichool.fr
+sn: rambaud
+userPassword:: e1NTSEF9MUVJbHZTM0FWanlwdStyU1V6K21COU1aWXBOMWR1bEE=
+
+dn: sn=nicomette,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Vincent NICOMETTE
+mail: nicomette@musichool.fr
+sn: nicomette
+userPassword:: e1NTSEF9MUVJbHZTM0FWanlwdStyU1V6K21COU1aWXBOMWR1bEE=
+
+dn: sn=souvay,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Gael SOUVAY
+mail: souvay@musichool.fr
+sn: souvay
+userPassword:: e1NTSEF9MW9HUDA1N2sxbXRwY0NEMmN0NW1laXdyeElLSi9kNko=
+
+dn: sn=cadart,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Isabelle CADART
+mail: cadart@musichool.fr
+sn: cadart
+userPassword:: e1NTSEF9WU8rY3JYY2NidzY5cGphTm9oZnhIZG9SOEZGYS8rai8=
+
+dn: sn=adam,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Gauthier ADAM
+mail: adam@musichool.fr
+sn: adam
+userPassword:: e1NTSEF9WXhRYlZjU2MvYU9qSUZlbFI2NDlWUUR1N012WXJrTFM=
+
+dn: sn=livertou,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Emmanuel LIVERTOU
+mail: livertou@musichool.fr
+sn: livertou
+userPassword:: e1NTSEF9MUVJbHZTM0FWanlwdStyU1V6K21COU1aWXBOMWR1bEE=
+
+dn: sn=klein,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Corinne KLEIN
+mail: klein@musichool.fr
+sn: klein
+userPassword:: e1NTSEF9WU8rY3JYY2NidzY5cGphTm9oZnhIZG9SOEZGYS8rai8=
+
+dn: sn=troubet,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Olivier TROUBET
+mail: troubet@musichool.fr
+sn: troubet
+userPassword:: e1NTSEF9MUVJbHZTM0FWanlwdStyU1V6K21COU1aWXBOMWR1bEE=
+
+dn: sn=colin,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Antoine COLIN
+mail: colin@musichool.fr
+sn: colin
+userPassword:: e1NTSEF9MW9HUDA1N2sxbXRwY0NEMmN0NW1laXdyeElLSi9kNko=
+
+dn: sn=doyen,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Guillaume DOYEN
+description: Administrateur de l'annuaire
+mail: doyen@musichool.fr
+sn: doyen
+userPassword:: e1NTSEF9WXhRYlZjU2MvYU9qSUZlbFI2NDlWUUR1N012WXJrTFM=
+
+dn: sn=festor,ou=people,dc=musicschool,dc=fr
+objectclass: inetOrgPerson
+cn: Olivier FESTOR
+description: Administrateur de l'annuaire
+mail: festor@musichool.fr
+sn: festor
+userPassword:: e3NoYX01ZW42RzZNZXpScm9UM1hLcWtkUE9tWS9CZlE9
+
+dn: ou=classes,dc=musicschool,dc=fr
+objectclass: organizationalUnit
+ou: classes
+
+dn: cn=basse,ou=classes,dc=musicschool,dc=fr
+objectclass: groupOfUniqueNames
+cn: basse
+uniqueMember: sn=adam,ou=people,dc=musicschool,dc=fr
+uniqueMember: sn=doyen,ou=people,dc=musicschool,dc=fr
+
+dn: cn=guitare,ou=classes,dc=musicschool,dc=fr
+objectclass: groupOfUniqueNames
+cn: guitare
+uniqueMember: sn=rambaud,ou=people,dc=musicschool,dc=fr
+uniqueMember: sn=livertou,ou=people,dc=musicschool,dc=fr
+uniqueMember: sn=troubet,ou=people,dc=musicschool,dc=fr
+uniqueMember: sn=nicomette,ou=people,dc=musicschool,dc=fr
+
+dn: cn=chant,ou=classes,dc=musicschool,dc=fr
+objectclass: groupOfUniqueNames
+cn: chant
+uniqueMember: sn=cadart,ou=people,dc=musicschool,dc=fr
+uniqueMember: sn=klein,ou=people,dc=musicschool,dc=fr
+
+dn: cn=batterie,ou=classes,dc=musicschool,dc=fr
+objectclass: groupOfUniqueNames
+cn: batterie
+uniqueMember: sn=souvay,ou=people,dc=musicschool,dc=fr
+uniqueMember: sn=colin,ou=people,dc=musicschool,dc=fr
+
+dn: ou=roles,dc=musicschool,dc=fr
+objectclass: organizationalUnit
+ou: roles
+
+dn: cn=manager,ou=roles,dc=musicschool,dc=fr
+objectclass: organizationalRole
+cn: manager
+roleOccupant: sn=doyen,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=festor,ou=people,dc=musicschool,dc=fr
+
+dn: cn=professeur,ou=roles,dc=musicschool,dc=fr
+objectclass: organizationalRole
+cn: professeur
+roleOccupant: sn=klein,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=livertou,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=souvay,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=adam,ou=people,dc=musicschool,dc=fr
+
+dn: cn=eleve,ou=roles,dc=musicschool,dc=fr
+objectclass: organizationalRole
+cn: eleve
+roleOccupant: sn=cadart,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=doyen,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=rambaud,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=troubet,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=colin,ou=people,dc=musicschool,dc=fr
+roleOccupant: sn=nicomette,ou=people,dc=musicschool,dc=fr
+
